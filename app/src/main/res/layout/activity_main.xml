@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#F5F7FB"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:id="@+id/txtTitulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Gestión de Preferencias"
+            android:textAlignment="center"
+            android:textColor="#1E293B"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/txtSubtitulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Guarda, muestra y modifica los valores almacenados en SharedPreferences"
+            android:textAlignment="center"
+            android:textColor="#475569"
+            android:textSize="15sp"
+            android:layout_marginBottom="24dp" />
+
+        <Button
+            android:id="@+id/btnCargar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Abrir pantalla de preferencias"
+            android:textAllCaps="false"
+            android:layout_marginBottom="12dp" />
+
+        <Button
+            android:id="@+id/btnMostrar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mostrar valores guardados"
+            android:textAllCaps="false"
+            android:layout_marginBottom="16dp" />
+
+        <EditText
+            android:id="@+id/txtString"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Escribe un nuevo valor"
+            android:backgroundTint="#3B82F6"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp" />
+
+        <Button
+            android:id="@+id/btnModificar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Modificar preferencia"
+            android:textAllCaps="false" />
+
+    </LinearLayout>
+</ScrollView>
